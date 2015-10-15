@@ -21,7 +21,7 @@ import java.net.UnknownHostException;
           NetworkInterface networkB = NetworkInterface.getByInetAddress(IP);
           
           //MAC Address
-          byte[] macb = networkb.getHardwareAddress();
+          byte[] macb = networkB.getHardwareAddress();
           
           System.out.println("Company B - MAC address : ");
           
