@@ -21,13 +21,13 @@ import java.net.UnknownHostException;
           NetworkInterface networkB = NetworkInterface.getByInetAddress(IP);
           
           //MAC Address
-          byte[] macb = networkB.getHardwareAddress();
+          byte[] macB = networkB.getHardwareAddress();
           
           System.out.println("Company B - MAC address : ");
           
           StringBuilder sbB = new StringBuilder();
-		for (int b = 0; b < macb.length; b++) {
-			sbB.append(String.format("%02X%s", macB[b], (a < macB.length - 1) ? "-" : ""));		
+		for (int b = 0; b < macB.length; b++) {
+			sbB.append(String.format("%02X%s", macB[b], (b < macB.length - 1) ? "-" : ""));		
           }
           
           System.out.println(sbB.toString());
